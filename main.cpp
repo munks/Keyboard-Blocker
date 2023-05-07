@@ -102,7 +102,7 @@ int WINAPI WinMain (HINSTANCE lp_hInstance, HINSTANCE lp_hPrevInstance, LPSTR lp
 	RegisterClassEx(&lv_wcMain);
 
 	//Create Main Window
-	HWND lv_main = CreateWindowEx(WS_EX_TOPMOST, "Duality_Frame_1", "Keyboard-Blocker", WS_CAPTION | WS_SYSMENU | WS_VISIBLE,
+	HWND lv_main = CreateWindowEx(0, "Duality_Frame_1", "Keyboard-Blocker", WS_CAPTION | WS_SYSMENU | WS_VISIBLE,
 									CW_USEDEFAULT, CW_USEDEFAULT, 200, 100,
 									NULL, NULL, lp_hInstance, NULL
 									);
